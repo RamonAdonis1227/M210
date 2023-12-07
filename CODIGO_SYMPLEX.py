@@ -1,5 +1,6 @@
 import Pivoteamento_2
 
+
 def get_input():
     # Coeficientes da função objetivo
     PPL = []
@@ -46,7 +47,7 @@ def get_input():
         coef_restricao.append(resultado)
         coeficientes_restricao.append(coef_restricao)
 
-    return PPL, coeficientes_restricao, SINAL, num_variaveis
+    return PPL, coeficientes_restricao, SINAL, num_variaveis, num_restricoes
     
 def inicializar_tableau(PPL, coeficientes_restricao, SINAL):
     # Número de variáveis na função objetivo
@@ -170,7 +171,7 @@ def simplex(PPL, coeficientes_restricao, SINAL):
     
     return tableau[0], tableau, colunas_pivoteadas, linhas_pivotadas  # Retorna a primeira linha como a solução ótima, a tabela inteira, as colunas e linhas pivoteadas
 
-PPL, coeficientes_restricao, SINAL, num_variaveis = get_input()
+PPL, coeficientes_restricao, SINAL, num_variaveis, num_restricoes = get_input()
 
 tableau_final, tableau, colunas_pivoteadas, linhas_pivoteadas = simplex(PPL, coeficientes_restricao, SINAL)
 
@@ -182,7 +183,7 @@ Pivoteamento_2.pivoteamento(colunas_pivoteadas, linhas_pivoteadas, tableau, num_
 lucro_otimo = tableau_final[-1]  # Ultimo Valor da Primeira linha
 
 # Preços sombra das restrições
-precos_sombra = tableau_final[len(tableau_final)-3:-1]
+precos_sombra = tableau_final[len(tableau_final)-(num_restricoes+1):-1]
 
 # Exibindo os resultados
 print("\nLucro ótimo:")
