@@ -73,7 +73,7 @@ Preços sombra das restrições:
 ### Autores
 
 - [Ramon Adônis Pereira de Abreu](https://github.com/RamonAdonis1227)
-- [Túlio Barroso Volpato](https://github.com/"...")
+- [Túlio Barroso Volpato](https://github.com/tuliovolpato)
 
 
 <img src = "https://www.infomoney.com.br/wp-content/uploads/2019/06/cristiano-ronaldo.jpg?resize=900%2C515&quality=50&strip=all">
