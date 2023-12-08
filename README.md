@@ -31,7 +31,8 @@ Este projeto apresenta uma implementação do algoritmo Simplex para resolver pr
 ### Exemplo de Uso
 
 ```
-$ python main.py
+$ python Pivoteamento_2.py
+$ python Symplex.py
 Quantas variáveis há na Função Objetivo? 3
 Digite os coeficientes da função de maximização:
 X1 = 5
