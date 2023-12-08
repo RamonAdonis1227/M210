@@ -18,11 +18,10 @@ Este projeto apresenta uma implementação do algoritmo Simplex para resolver pr
 1. **Pré-requisitos:** Certifique-se de ter o Python instalado.
 2. **Clone o Repositório:** Clone este repositório em sua máquina local.
    ```bash
-   git clone https://github.com/seu-usuario/projeto-simplex.git
+   git clone https://github.com/RamonAdonis1227/M210.git
    ```
 3. **Execute o Programa:** Vá para o diretório do projeto e execute os arquivos `Pivoteamento_2` e  `Symplex.py` no terminal.
    ```bash
-   cd SIMPLEX
    python Pivoteamento_2.py
    python Symplex.py
    ```
